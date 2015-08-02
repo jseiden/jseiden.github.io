@@ -1,34 +1,47 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <title>Jake Seiden  by jseiden</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Jake Seiden  by jseiden</title>
   </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Jake Seiden </h1>
-      <h2 class="project-tagline"></h2>
-    </section>
 
-    <section class="main-content">
-      <h3>
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>Jake Seiden </h1>
+          <h2></h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/jseiden" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h3>
 <a id="the-pros-and-cons-of-yeoman" class="anchor" href="#the-pros-and-cons-of-yeoman" aria-hidden="true"><span class="octicon octicon-link"></span></a>The Pros and Cons of Yeoman.</h3>
 
-<p>Yeoman is a very powerful scaffolding tool. I've only recently learned to appreciate the practice of scaffolding. Starting a project with a preset layout can allow a programmer to bypass a lot of setup and commence coding immediately. It is very satisfying to start sculpting the innards of your project 5 minutes after sitting down. If you are confident that your chosen generator is legit, this can also be a way to reinforce best practices and become comfortable with common file structures that you wouldn't have made yourself. Once yeoman and the angular generator are installed with npm, the following code is all it takes to get started:</p>
+<p>Yeoman is a very powerful scaffolding tool. I've only recently learned to appreciate the practice of scaffolding. Starting a project with a preset layout can allow a programmer to bypass a lot of setup and commence coding immediately. It is very satisfying to start sculpting the innards of your project 5 minutes after sitting down. If you are confident that your chosen generator is legit, this can also be a way to reinforce best practices and become comfortable with common file structures that you wouldn't have made yourself. Once Yeoman and the angular generator are installed with npm, the following code is all it takes to get started:</p>
 
 <pre><code>$ mkdir myApp
 $ cd myApp
 $ yo angular 
 </code></pre>
 
-<p>Yeoman's command line tool will then guide you through some basic options such as including Twitter Bootstrap or the Sass. Pretty easy, right?
+<p>Yeoman's command line tool will then guide you through some basic options such as including Twitter Bootstrap or Sass. Pretty easy, right?
 One must also consider the pitfall's of such a tool. Yeoman is, by nature, opinionated. It also abstracts some crucial steps in the setup. 
-For now, I'm not using Yeoman. It creates some valuable shortcuts that I intend to use in the future, but in the meantime, the details are important. 
+For now, I'm not using Yeoman on personal projects. It creates some valuable shortcuts that I intend to use in the future, but in the meantime, the details are important. 
 In the end, it's worth considering both the pros and cons of before start your next project. </p>
 
 <h3>
@@ -48,7 +61,7 @@ console.log(9);
 console.log(10);
 </code></pre>
 
-<p>This is only ten consecutive console logs and already a somewhat tedious. Now take a look at the for loop equivalent. FYI, if you don't recognize the ++ operator, 
+<p>This is only ten consecutive console logs and already a somewhat tedious. Now take a look at the <strong>for</strong> loop equivalent. FYI, if you don't recognize the ++ operator, 
 all it does is increment the variable it's placed after. So i++ is equivalent to i = i + 1;</p>
 
 <pre><code>for(var i =  1; i &lt; 11; i++){
@@ -57,17 +70,18 @@ all it does is increment the variable it's placed after. So i++ is equivalent to
 </code></pre>
 
 <p>With only three lines of code we can achieve the same result without once repeating ourselves. 
-It becomes even cooler when we change 11 to 101 or even 1001. It is possible to increment this number until the computer can't handle it. 
-While loops are also worth knowing. </p>
+Things become even cooler when we change 11 to 101 or even 1001. </p>
+
+<p><strong>While</strong> loops are also worth knowing. </p>
 
 <pre><code>var i = 0; 
 while(i &lt; 11){
   console.log(i)
   i++;
- }
+}
 </code></pre>
 
-<p>This example while loop does the same thing as the example for loop. A for loop is most useful when you know the number of repetitions you want. However, if you don't know that number or it could change, you'll probably want to use a while loop. This is the end of my post for now. Even if you're a beginner, don't be afraid to use loops in your code. They promote cleaner, DRYer code, and make you a more efficient programmer. </p>
+<p>This example while loop does the same thing as the example for loop. A for loop is most useful when you know the number of repetitions you want. However, if you don't know that number or it could change, you'll probably want to use a while loop. This is the end of my post for now. Even if you're a beginner, don't be afraid to use loops in your code. They promote cleaner, less repetitive code, and make you a more efficient programmer. </p>
 
 <h3>
 <a id="array-like-objects-in-javascript" class="anchor" href="#array-like-objects-in-javascript" aria-hidden="true"><span class="octicon octicon-link"></span></a>Array-like Objects in Javascript</h3>
@@ -122,7 +136,7 @@ fn(1, 2, 3);
 <a id="basic-node-and-express-servers" class="anchor" href="#basic-node-and-express-servers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Basic Node and Express Servers</h3>
 
 <p>When learning a new technology, I find minimal examples the most helpful. 
-Express is a server-side Javascript framework built on Node.js that streamlines and abstracts the server-building process. I have built two bare-bones servers for comparison. </p>
+Express is a server-side Javascript framework built on Node.js that streamlines and abstracts the server-building process. Here are two bare-bones servers for comparison. </p>
 
 <h4>
 <a id="a-basic-node-server" class="anchor" href="#a-basic-node-server" aria-hidden="true"><span class="octicon octicon-link"></span></a>a basic node server</h4>
@@ -153,17 +167,16 @@ A server, at its most basic, is a computer or a computer program that takes in r
 
 <p>These servers are nearly identical in length but are slightly different. What is the point, you might ask, in writing a blog post that describes two very similar sections of code? I think it's important to compare before contrasting. The subtle differences in the code foreshadow much more salient features of Express. </p>
 
-<p>Note that the basic Express server doesn't import the http module that the node version does. This is one of node's built in modules that Express doesn't explicitly require, As you build more servers, you'll notice many more subtle abstractions that differentiate it from plain node. 
+<p>Note that the basic Express server doesn't import the http module that the node version does. This is one of node's built in modules that Express doesn't explicitly require, As you build more servers, you'll notice more subtle abstractions that differentiate it from plain Node. 
 The real power of the Express framework is in the middleware, which I intend to define and discuss in an upcoming post. </p>
+        </section>
 
-      <footer class="site-footer">
+        <footer>
+          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
-
-    </section>
-
-  
+        
+      </div>
+    </div>
   </body>
 </html>
-
