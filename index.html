@@ -19,6 +19,7 @@
 
         <header>
           <h1>Jake Seiden </h1>
+          <h2></h2>
         </header>
 
         <section id="downloads" class="clearfix">
@@ -31,37 +32,15 @@
           <h3>
 <a id="the-pros-and-cons-of-yeoman" class="anchor" href="#the-pros-and-cons-of-yeoman" aria-hidden="true"><span class="octicon octicon-link"></span></a>The Pros and Cons of Yeoman.</h3>
 
-<p>Yeoman is a very powerful scaffolding tool. I've only recently learned to
-appreciate the practice of scaffolding. Starting a project with a preset layout
-can allow a programmer to bypass a lot of setup and commence coding immediately.
-It is very satisfying to start sculpting the innards of your project 5 minutes
-after sitting down. If you are confident that your chosen template is legit,
-this can also be a way to reinforce best practices and become comfortable with
-common file structures that you wouldn't have made yourself.</p> 
-
-<p>First install <i>yo</i>, Yeoman's command line tool.</p>
-
-<pre><code>$ npm install -g yo
-</code></pre>
-
-<p>Now install a scaffold, which is referred to as a <a href="http://yeoman.io/generators/">generator</a>. 
-For this example we will use an Angular generator. There are multiple Angular 
-generators, each with a different stack or setup, but we will go with the
-official one.</p> 
-
-<pre><code>
-$ npm install generator-angular 
-</code></pre>
-
-<p>Once Yeoman and the Angular generator are installed with npm, the following code is all it takes to get started:</p>
+<p>Yeoman is a very powerful scaffolding tool. I've only recently learned to appreciate the practice of scaffolding. Starting a project with a preset layout can allow a programmer to bypass a lot of setup and commence coding immediately. It is very satisfying to start sculpting the innards of your project 5 minutes after sitting down. If you are confident that your chosen generator is legit, this can also be a way to reinforce best practices and become comfortable with common file structures that you wouldn't have made yourself. Once Yeoman and the angular generator are installed with npm, the following code is all it takes to get started:</p>
 
 <pre><code>$ mkdir myApp
 $ cd myApp
 $ yo angular 
 </code></pre>
 
-<p>Yo will then guide you through some basic options such as including Twitter Bootstrap or Sass. Pretty easy, right?
-One must also consider the pitfall's of such a tool. Yeoman is opinionated. It also abstracts some crucial steps in the setup. 
+<p>Yeoman's command line tool will then guide you through some basic options such as including Twitter Bootstrap or Sass. Pretty easy, right?
+One must also consider the pitfall's of such a tool. Yeoman is, by nature, opinionated. It also abstracts some crucial steps in the setup. 
 For now, I'm not using Yeoman on personal projects. It creates some valuable shortcuts that I intend to use in the future, but in the meantime, the details are important. 
 In the end, it's worth considering both the pros and cons of before start your next project. </p>
 
@@ -153,8 +132,6 @@ fn(1, 2, 3);
 
 <p>If you already knew this, thanks for reading. If you didn't, go forth and code with one more tool in your belt. </p>
 
-
-<hr><hr>
 <h3>
 <a id="basic-node-and-express-servers" class="anchor" href="#basic-node-and-express-servers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Basic Node and Express Servers</h3>
 
@@ -192,6 +169,41 @@ A server, at its most basic, is a computer or a computer program that takes in r
 
 <p>Note that the basic Express server doesn't import the http module that the node version does. This is one of node's built in modules that Express doesn't explicitly require, As you build more servers, you'll notice more subtle abstractions that differentiate it from plain Node. 
 The real power of the Express framework is in the middleware, which I intend to define and discuss in an upcoming post. </p>
+
+<h3>
+<a id="ternary-operator" class="anchor" href="#ternary-operator" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ternary Operator</h3>
+
+<p>The ternary operator is a useful shortcut for Javascript conditionals (aka if statements).  The ternary can be thought of like an if...else statement; if x is true, perform action y. Otherwise, perform action z. 
+Consider the following if...else statement:</p>
+
+<pre><code>if( animal === "dog" ) {
+  console.log( "bark" );
+} else {
+  console.log( "meow" );
+}
+</code></pre>
+
+<p>Now consider the equivalent ternary: </p>
+
+<pre><code>animal === "dog" ? console.log( "bark" ) **:  console.log( "meow" );
+</code></pre>
+
+<p>The word ternary describes something consisting of three parts so it should make sense that this construct has three parts. The borders are indicated by a question mark(?) and a colon(:).
+if x is true <strong>?</strong> perform action y <strong>:</strong> otherwise, perform action z</p>
+
+<ol>
+<li><p>The leftmost section is the condition that must be met. It is equivalent to the code inside the initial parens of an if..else statement.</p></li>
+<li><p>The middle section is the action that will be performed if the left section evaluates to true, equivalent to the code inside the first pair of brackets of an if...else statement.</p></li>
+<li><p>The right section is the action that will be performed if the condition is false. This is like the code within the brackets after the word <em>else</em> in an if..else statement.</p></li>
+</ol>
+
+<p>The following is an even shorter, more elegant way to code a basic if...else:</p>
+
+<pre><code>console.log( animal == "dog" ? "bark" : "meow" );
+</code></pre>
+
+<p>It is definitely true that some programmers consider the standard if statement more readable, despite its verbosity. 
+Just like standard if...else statements, ternary conditional logic can get a lot more complex than the examples I've given you.  However, using ternary operators of any complexity is a valuable practice that can save you both space and time. </p>
         </section>
 
         <footer>
