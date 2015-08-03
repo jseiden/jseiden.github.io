@@ -1,51 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on https://github.com/jonrohan -->
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <title>Jake Seiden  by jseiden</title>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <body>
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" href="stylesheets/github-dark.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>Jake Seiden </title>
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Jake Seiden </h1>
+    </header>
     <div id="container">
-      <div class="inner">
-
-        <header>
-          <h1>Jake Seiden </h1>
-          <h2></h2>
-        </header>
-
-        <section id="downloads" class="clearfix">
-          <a href="https://github.com/jseiden" id="view-on-github" class="button"><span>View on GitHub</span></a>
-        </section>
-
-        <hr>
-
-        <section id="main_content">
+      <p class="tagline"></p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/jseiden" class="code">View Jake Seiden  on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
           <h3>
 <a id="ternary-operator" class="anchor" href="#ternary-operator" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ternary Operator</h3>
 
 <p>The ternary operator is a useful shortcut for Javascript conditionals (aka if statements).  The ternary can be thought of like an if...else statement; if x is true, perform action y. Otherwise, perform action z. 
 Consider the following if...else statement:</p>
 
-<pre><code>if( animal === "dog" ) {
-  console.log( "bark" );
-} else {
-  console.log( "meow" );
-}
-</code></pre>
+<div class="highlight highlight-javascript"><pre><span class="pl-k">if</span>( animal <span class="pl-k">===</span> <span class="pl-s"><span class="pl-pds">"</span>dog<span class="pl-pds">"</span></span> ) {
+  <span class="pl-en">console</span><span class="pl-c1">.log</span>( <span class="pl-s"><span class="pl-pds">"</span>bark<span class="pl-pds">"</span></span> );
+} <span class="pl-k">else</span> {
+  <span class="pl-en">console</span><span class="pl-c1">.log</span>( <span class="pl-s"><span class="pl-pds">"</span>meow<span class="pl-pds">"</span></span> );
+}</pre></div>
 
 <p>Now consider the equivalent ternary: </p>
 
-<pre><code>animal === "dog" ? console.log( "bark" ) **:  console.log( "meow" );
-</code></pre>
+<div class="highlight highlight-javascript"><pre>animal <span class="pl-k">===</span> <span class="pl-s"><span class="pl-pds">"</span>dog<span class="pl-pds">"</span></span> <span class="pl-k">?</span> <span class="pl-en">console</span><span class="pl-c1">.log</span>( <span class="pl-s"><span class="pl-pds">"</span>bark<span class="pl-pds">"</span></span> ) <span class="pl-k">**:</span>  <span class="pl-en">console</span><span class="pl-c1">.log</span>( <span class="pl-s"><span class="pl-pds">"</span>meow<span class="pl-pds">"</span></span> );</pre></div>
 
 <p>The word ternary describes something consisting of three parts so it should make sense that this construct has three parts. The borders are indicated by a question mark(?) and a colon(:).
 if x is true <strong>?</strong> perform action y <strong>:</strong> otherwise, perform action z</p>
@@ -58,24 +61,41 @@ if x is true <strong>?</strong> perform action y <strong>:</strong> otherwise, p
 
 <p>The following is an even shorter, more elegant way to code a basic if...else:</p>
 
-<pre><code>console.log( animal == "dog" ? "bark" : "meow" );
-</code></pre>
+<div class="highlight highlight-javascript"><pre><span class="pl-en">console</span><span class="pl-c1">.log</span>( animal <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">"</span>dog<span class="pl-pds">"</span></span> <span class="pl-k">?</span> <span class="pl-s"><span class="pl-pds">"</span>bark<span class="pl-pds">"</span></span> <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>meow<span class="pl-pds">"</span></span> );</pre></div>
 
 <p>It is definitely true that some programmers consider the standard if statement more readable, despite its verbosity. 
 Just like standard if...else statements, ternary conditional logic can get a lot more complex than the examples I've given you.  However, using ternary operators of any complexity is a valuable practice that can save you both space and time. </p>
 
 <h3>
-<a id="the-pros-and-cons-of-yeoman" class="anchor" href="#the-pros-and-cons-of-yeoman" aria-hidden="true"><span class="octicon octicon-link"></span></a>The Pros and Cons of Yeoman.</h3>
+<a id="the-pros-and-cons-of-yeoman" class="anchor" href="#the-pros-and-cons-of-yeoman" aria-hidden="true"><span class="octicon octicon-link"></span></a>The Pros and Cons of Yeoman</h3>
 
-<p>Yeoman is a very powerful scaffolding tool. I've only recently learned to appreciate the practice of scaffolding. Starting a project with a preset layout can allow a programmer to bypass a lot of setup and commence coding immediately. It is very satisfying to start sculpting the innards of your project 5 minutes after sitting down. If you are confident that your chosen generator is legit, this can also be a way to reinforce best practices and become comfortable with common file structures that you wouldn't have made yourself. Once Yeoman and the angular generator are installed with npm, the following code is all it takes to get started:</p>
+<p>Yeoman is a very powerful scaffolding tool. I've only recently learned to
+appreciate the practice of scaffolding. Starting a project with a preset layout
+can allow a programmer to bypass a lot of setup and commence coding immediately.
+It is very satisfying to start sculpting the innards of your project 5 minutes
+after sitting down. If you are confident that your chosen template is legit,
+this can also be a way to reinforce best practices and become comfortable with
+common file structures that you wouldn't have made yourself.</p>
 
-<pre><code>$ mkdir myApp
-$ cd myApp
-$ yo angular 
-</code></pre>
+<p>First install <em>yo</em>, Yeoman's command line tool.</p>
 
-<p>Yeoman's command line tool will then guide you through some basic options such as including Twitter Bootstrap or Sass. Pretty easy, right?
-One must also consider the pitfall's of such a tool. Yeoman is, by nature, opinionated. It also abstracts some crucial steps in the setup. 
+<div class="highlight highlight-bash"><pre>$ npm install -g yo</pre></div>
+
+<p>Now install a scaffold, which is referred to as a <a href="http://yeoman.io/generators/">generator</a>. 
+For this example we will use an Angular generator. There are multiple Angular 
+generators, each with a different stack or setup, but we will go with the
+official one. </p>
+
+<div class="highlight highlight-bash"><pre>$ npm install generator-angular </pre></div>
+
+<p>Once Yeoman and the Angular generator are installed with npm, the following code is all it takes to get started:</p>
+
+<div class="highlight highlight-bash"><pre>$ mkdir myApp
+$ <span class="pl-c1">cd</span> myApp
+$ yo angular </pre></div>
+
+<p>Yo will then guide you through some basic options such as including Twitter Bootstrap or Sass. Pretty easy, right?
+One must also consider the pitfall's of such a tool. Yeoman is opinionated. It also abstracts some crucial steps in the setup. 
 For now, I'm not using Yeoman on personal projects. It creates some valuable shortcuts that I intend to use in the future, but in the meantime, the details are important. 
 In the end, it's worth considering both the pros and cons of before start your next project. </p>
 
@@ -84,37 +104,34 @@ In the end, it's worth considering both the pros and cons of before start your n
 
 <p>Loops are an essential programming concept. They do an extreme amount of work for you. Consider the following code.</p>
 
-<pre><code>console.log(1);
-console.log(2);
-console.log(3);
-console.log(4);
-console.log(5);
-console.log(6);
-console.log(7);
-console.log(8);
-console.log(9);
-console.log(10);
-</code></pre>
+<div class="highlight highlight-javascript"><pre><span class="pl-en">console</span><span class="pl-c1">.log</span>(<span class="pl-c1">1</span>);
+<span class="pl-en">console</span><span class="pl-c1">.log</span>(<span class="pl-c1">2</span>);
+<span class="pl-en">console</span><span class="pl-c1">.log</span>(<span class="pl-c1">3</span>);
+<span class="pl-en">console</span><span class="pl-c1">.log</span>(<span class="pl-c1">4</span>);
+<span class="pl-en">console</span><span class="pl-c1">.log</span>(<span class="pl-c1">5</span>);
+<span class="pl-en">console</span><span class="pl-c1">.log</span>(<span class="pl-c1">6</span>);
+<span class="pl-en">console</span><span class="pl-c1">.log</span>(<span class="pl-c1">7</span>);
+<span class="pl-en">console</span><span class="pl-c1">.log</span>(<span class="pl-c1">8</span>);
+<span class="pl-en">console</span><span class="pl-c1">.log</span>(<span class="pl-c1">9</span>);
+<span class="pl-en">console</span><span class="pl-c1">.log</span>(<span class="pl-c1">10</span>);</pre></div>
 
 <p>This is only ten consecutive console logs and already a somewhat tedious. Now take a look at the <strong>for</strong> loop equivalent. FYI, if you don't recognize the ++ operator, 
 all it does is increment the variable it's placed after. So i++ is equivalent to i = i + 1;</p>
 
-<pre><code>for(var i =  1; i &lt; 11; i++){
-  console.log(i)
-}
-</code></pre>
+<div class="highlight highlight-javascript"><pre><span class="pl-k">for</span>(<span class="pl-k">var</span> i <span class="pl-k">=</span>  <span class="pl-c1">1</span>; i <span class="pl-k">&lt;</span> <span class="pl-c1">11</span>; i<span class="pl-k">++</span>){
+  <span class="pl-en">console</span><span class="pl-c1">.log</span>(i)
+}</pre></div>
 
 <p>With only three lines of code we can achieve the same result without once repeating ourselves. 
 Things become even cooler when we change 11 to 101 or even 1001. </p>
 
 <p><strong>While</strong> loops are also worth knowing. </p>
 
-<pre><code>var i = 0; 
-while(i &lt; 11){
-  console.log(i)
-  i++;
-}
-</code></pre>
+<div class="highlight highlight-javascript"><pre><span class="pl-k">var</span> i <span class="pl-k">=</span> <span class="pl-c1">0</span>; 
+<span class="pl-k">while</span>(i <span class="pl-k">&lt;</span> <span class="pl-c1">11</span>){
+  <span class="pl-en">console</span><span class="pl-c1">.log</span>(i)
+  i<span class="pl-k">++</span>;
+}</pre></div>
 
 <p>This example while loop does the same thing as the example for loop. A for loop is most useful when you know the number of repetitions you want. However, if you don't know that number or it could change, you'll probably want to use a while loop. This is the end of my post for now. Even if you're a beginner, don't be afraid to use loops in your code. They promote cleaner, less repetitive code, and make you a more efficient programmer. </p>
 
@@ -204,14 +221,26 @@ A server, at its most basic, is a computer or a computer program that takes in r
 
 <p>Note that the basic Express server doesn't import the http module that the node version does. This is one of node's built in modules that Express doesn't explicitly require, As you build more servers, you'll notice more subtle abstractions that differentiate it from plain Node. 
 The real power of the Express framework is in the middleware, which I intend to define and discuss in an upcoming post. </p>
-        </section>
-
-        <footer>
-          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
-        </footer>
-
-        
+        </article>
       </div>
     </div>
-  </body>
+    <footer>
+      <div class="owner">
+
+      <p><a href="https://github.com/jseiden" class="avatar"><img src="https://avatars2.githubusercontent.com/u/8481896?v=3&amp;s=60" width="48" height="48"></a>View <a href="https://github.com/jseiden">jseiden</a> on <a href="https://www.github.com">GitHub</a></p>
+
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/jseiden/jseiden.github.io/tarball/master" class="tar">tar</a><a href="https://github.com/jseiden/jseiden.github.io/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+  
+</body>
 </html>
