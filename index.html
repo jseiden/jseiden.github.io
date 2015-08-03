@@ -32,15 +32,37 @@
           <h3>
 <a id="the-pros-and-cons-of-yeoman" class="anchor" href="#the-pros-and-cons-of-yeoman" aria-hidden="true"><span class="octicon octicon-link"></span></a>The Pros and Cons of Yeoman.</h3>
 
-<p>Yeoman is a very powerful scaffolding tool. I've only recently learned to appreciate the practice of scaffolding. Starting a project with a preset layout can allow a programmer to bypass a lot of setup and commence coding immediately. It is very satisfying to start sculpting the innards of your project 5 minutes after sitting down. If you are confident that your chosen generator is legit, this can also be a way to reinforce best practices and become comfortable with common file structures that you wouldn't have made yourself. Once Yeoman and the angular generator are installed with npm, the following code is all it takes to get started:</p>
+<p>Yeoman is a very powerful scaffolding tool. I've only recently learned to
+appreciate the practice of scaffolding. Starting a project with a preset layout
+can allow a programmer to bypass a lot of setup and commence coding immediately.
+It is very satisfying to start sculpting the innards of your project 5 minutes
+after sitting down. If you are confident that your chosen template is legit,
+this can also be a way to reinforce best practices and become comfortable with
+common file structures that you wouldn't have made yourself. 
+
+First install <i>yo</i>, Yeoman's command line tool.
+
+<pre<code>
+$ npm install -g yo
+</code</pre>
+
+Now install a scaffold, which is referred to as a <a href="http://yeoman.io/generators/">generator</a>. 
+For this example we will use an Angular generator. There are multiple Angular 
+generators, each with a different stack or setup, but we will go with the official one. 
+
+<pre<code>
+$ npm install generator-angular 
+</code</pre>
+
+Once Yeoman and the Angular generator are installed with npm, the following code is all it takes to get started:</p>
 
 <pre><code>$ mkdir myApp
 $ cd myApp
 $ yo angular 
 </code></pre>
 
-<p>Yeoman's command line tool will then guide you through some basic options such as including Twitter Bootstrap or Sass. Pretty easy, right?
-One must also consider the pitfall's of such a tool. Yeoman is, by nature, opinionated. It also abstracts some crucial steps in the setup. 
+<p>Yo will then guide you through some basic options such as including Twitter Bootstrap or Sass. Pretty easy, right?
+One must also consider the pitfall's of such a tool. Yeoman is opinionated. It also abstracts some crucial steps in the setup. 
 For now, I'm not using Yeoman on personal projects. It creates some valuable shortcuts that I intend to use in the future, but in the meantime, the details are important. 
 In the end, it's worth considering both the pros and cons of before start your next project. </p>
 
