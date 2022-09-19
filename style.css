@@ -317,3 +317,7 @@ label {
     height: 100vh;
     background-color: #f0ead6;
 }
+
+footer a {
+    text-decoration: underline;
+}
