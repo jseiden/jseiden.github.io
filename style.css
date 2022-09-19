@@ -78,7 +78,7 @@ nav ul {
     text-align: left;
 }
 
-.ul-resources li {
+.ul-resources li a{
     text-decoration: underline;
 }
 
