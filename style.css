@@ -134,7 +134,7 @@ header, section, footer {
 
 .hero-image-wrapper {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/hero-food.jpg");
-    height: 73vh;
+    height: 100%;
     background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
