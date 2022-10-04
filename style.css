@@ -146,11 +146,11 @@ header, section, footer {
     position: absolute;
     top: 50%;
     left: 50%;
+
     transform: translate(-50%, -50%);
     color: white;
     font-size: large;
 }
-
 hero-p {
     text-size: 1.5em;
     text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
@@ -209,7 +209,6 @@ hero-p {
     padding-bottom: 50px;
 } 
 .new_client_form_wrapper {
-    border: 1px solid black;
     display: inline-block; 
     margin-left: 20px;
     width: auto;
