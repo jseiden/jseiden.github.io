@@ -321,3 +321,7 @@ label {
 footer a {
     text-decoration: underline;
 }
+
+.getStarted {
+    background-color: yellow;
+}
